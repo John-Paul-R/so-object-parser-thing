@@ -8,7 +8,7 @@ Console.WriteLine("Hello, World!");
 string StripComments(string line) { int idx = line.IndexOf('#'); return idx != -1 ? line[..idx] : line; }
 Console.WriteLine(StripComments("testing #123 gogo"));
 
-var outVal = new ExistingParser().ParseFile(@"C:\Users\johnp\RiderProjects\ObjectParserThing\ObjectParserThing\SourceData.txt");
+var outVal = new ObjectParserThing.ObjectParserThing().ParseFile(@"PATH_TO_FILE/SourceData.txt");
 
 Console.WriteLine(outVal);
 
