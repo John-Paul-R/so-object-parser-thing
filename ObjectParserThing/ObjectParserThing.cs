@@ -68,7 +68,7 @@ public class ObjectParserThing
                     return ParseObject(sr, trimmedLine.Contains('=') ? ParserState.Object : ParserState.List, line);
                 }
                 case ParserState.Object: {
-                    // The start of a new object or list
+                    // The start of a new object within the current object
                     if (trimmedLine.Contains('{')) {
                         // Gets the name
                         var (name, restOfLine) = GetLineKeyValue(trimmedLine);
