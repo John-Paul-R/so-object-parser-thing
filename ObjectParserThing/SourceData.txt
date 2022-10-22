@@ -1,0 +1,15 @@
+﻿Main_name = {
+    # Comment
+    # Comment
+    # Comment
+    type1 = ryu_3
+    type2 = "path" # Comment
+    type3 = name
+    type4 = true
+
+    type5 = {
+        name2
+        name3...
+        # Comment
+    }
+}
